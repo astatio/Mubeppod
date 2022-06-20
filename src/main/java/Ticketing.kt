@@ -38,7 +38,7 @@ class Ticketing : ListenerAdapter() {
     override fun onPrivateMessageReceived(event: PrivateMessageReceivedEvent) {
         if (event.author.isBot) return
         var theMessage = event.message.contentDisplay
-        
+
         //TODO: Comando abaixo é o inicio do ModMail. Não se encontra funcional.
         if (theMessage.startsWith("!ticket")) {
             //Allows sending messages to ticketing channel to a certain guild through PM.
